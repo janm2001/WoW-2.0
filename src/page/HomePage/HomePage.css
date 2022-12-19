@@ -1,0 +1,27 @@
+.homePage{
+    height: 95vh;
+    background: url("../../assets/homeImage.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+.main p,.main h1{
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.main h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
