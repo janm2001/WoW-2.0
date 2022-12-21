@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 nav{
-    padding: 0;
+    padding: 0.5rem 0;
     background: #000;
     color: #fff;
     font-family: 'Poppins',sans-serif;
@@ -38,14 +38,40 @@ nav a{
     display: none;
 }
 
+.linksSmall{
+    display: none;
+}
+
 @media(max-width:968px){
+
+    .wrap{
+        width: 90%;
+    }
     .links{
         display: none;
 
     }
 
+    .smallerDisplay button{
+        background-color: transparent;
+        border: none;
+
+    }
+
     .smallerDisplay{
         display: block;
+        
+   
+    }
+
+    .smallerDisplay button svg{
         color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .linksSmall{
+        display: block;
+        transition: 0,5s;
+        animation: fadeIn 1s;
     }
 }

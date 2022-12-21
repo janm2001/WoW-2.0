@@ -23,5 +23,42 @@
 .main h1{
     font-weight: 700;
     font-size: 3.5rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
+}
+
+.buttons{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+a{
+    padding: 1.0rem 1.5rem;
+    border-radius: 4px;
+    color: #f7b10a;
+    text-decoration: none;
+}
+
+.dragonflight{
+    background-color: rgb(213, 12, 12);
+    border:1px solid rgb(213, 12, 12);
+    opacity: 0.85;
+}
+
+.season{
+    background-color: transparent ;
+    border: 1px solid #f7b10a;
+}
+
+@media(max-width:968px){
+    .main h1{
+        font-size: 2.5rem;
+    }
+
+    .buttons{
+        flex-direction: column;
+    }
 }

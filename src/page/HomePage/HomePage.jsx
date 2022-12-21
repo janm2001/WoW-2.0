@@ -17,6 +17,10 @@ const HomePage = () => {
             explore the ancestral home of the dragonflights of Azeroth, and
             enter a new age of adventure today!
           </Typography>
+          <div className="buttons">
+            <a href="#" className="dragonflight">BUY DRAGONFLIGHT</a>
+            <a href="#" className="season">SEASON OVERVIEW</a>
+          </div>
         </Grid>
       </Grid>
     </div>

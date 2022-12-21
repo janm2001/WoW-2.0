@@ -4,7 +4,8 @@ import './Navbar.css'
 import logo from '../../assets/wow-logo.jpg'
 import {AiOutlineMenu} from 'react-icons/ai'
 import { useState } from 'react'
-import {IconButton} from '@mui/material'
+import {Paper,MenuItem,MenuList,ListItemText} from '@mui/material'
+
 
 
 
@@ -29,13 +30,33 @@ const Navbar = () => {
 
             <div className='smallerDisplay'>
               
+              <button onClick={() => setMenu(!menu)}>
               <AiOutlineMenu />
+              </button>
               
 
-              {/* {menu && <div>I'm here</div>} */}
+              
 
             </div>
+
       </div>
+      {menu && <Paper className='linksSmall' sx={{ width: "100%",background:"#000",color:"#fff",textAlign:"center" }}>
+      <MenuList dense>
+        <MenuItem>
+          <ListItemText inset>HOME</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemText inset>EXPANSIONS</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemText inset>CLASSES</ListItemText>
+        </MenuItem>
+        <MenuItem>
+          <ListItemText inset>NEWS</ListItemText>
+        </MenuItem>
+        
+      </MenuList>
+    </Paper>}
            
         </nav>
   )
