@@ -22,10 +22,10 @@ const Navbar = () => {
             </div>
 
             <div className="links">
-                <Link href='#'>HOME</Link>
-                <Link href='#'>EXPANSIONS</Link>
-                <Link href='#'>CLASSES</Link>
-                <Link href='#'>NEWS</Link>
+                <Link href='/'>HOME</Link>
+                <Link href='/expansions'>EXPANSIONS</Link>
+                <Link href='/classes'>CLASSES</Link>
+                <Link href='/news'>NEWS</Link>
             </div>
 
             <div className='smallerDisplay'>
@@ -43,16 +43,16 @@ const Navbar = () => {
       {menu && <Paper className='linksSmall' sx={{ width: "100%",background:"#000",color:"#fff",textAlign:"center" }}>
       <MenuList dense>
         <MenuItem>
-          <ListItemText inset>HOME</ListItemText>
+          <ListItemText inset><Link href='/'>HOME</Link></ListItemText>
         </MenuItem>
         <MenuItem>
-          <ListItemText inset>EXPANSIONS</ListItemText>
+          <ListItemText inset><Link href='/expansions'>EXPANSIONS</Link></ListItemText>
         </MenuItem>
         <MenuItem>
-          <ListItemText inset>CLASSES</ListItemText>
+          <ListItemText inset><Link href='/classes'>CLASSES</Link></ListItemText>
         </MenuItem>
         <MenuItem>
-          <ListItemText inset>NEWS</ListItemText>
+          <ListItemText inset><Link href='/news'>NEWS</Link></ListItemText>
         </MenuItem>
         
       </MenuList>

@@ -24,7 +24,7 @@ nav a{
 .links{
    
     display: flex;
-    gap: 1.5rem;
+    gap: 1.0rem;
     align-items: flex-start;
     justify-items: center;
 }
